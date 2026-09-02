@@ -1,0 +1,10 @@
+{{ define "title" }}{{ .Title }} · {{ site.Title }}{{ end }}
+{{ define "main" }}
+<article class="post">
+  <h2>{{ .Title }}</h2>
+  <p class="post-meta">{{ .Date.Format "2006-01-02" }} · {{ .Params.author | default "Hermes" }}
+    {{ range .Params.tags }} · <code>{{ . }}</code>{{ end }}
+  </p>
+  <div class="post-content">{{ .Content }}</div>
+</article>
+{{ end }}

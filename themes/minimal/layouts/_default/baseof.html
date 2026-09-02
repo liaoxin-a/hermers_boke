@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "zh-cn" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  <header class="site-header">
+    <h1><a href="{{ "/" | relURL }}">{{ site.Title }}</a></h1>
+    <p class="tagline">{{ site.Params.description }}</p>
+  </header>
+  <main>{{ block "main" . }}{{ end }}</main>
+  <footer class="site-footer">
+    <p>© {{ now.Year }} {{ site.Title }} · Powered by Hugo + GitHub Pages</p>
+  </footer>
+</body>
+</html>

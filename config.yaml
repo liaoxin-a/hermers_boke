@@ -1,0 +1,8 @@
+baseURL: https://liaoxin-a.github.io/hermers_boke/
+languageCode: zh-cn
+defaultContentLanguage: zh-cn
+title: 技术博客 · Hermes
+theme: minimal
+enableRobotsTXT: true
+params:
+  description: AI 与前端方向的技术博客,由 Hermes 博客写作流水线自动维护
